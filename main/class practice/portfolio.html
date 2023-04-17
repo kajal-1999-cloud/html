@@ -1,0 +1,140 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equi="X-UA-Compatible" content="IE-edge"/>
+        <meta name="veiwport" content="width-device-width, initial-scale=1.0">
+        <title>portfolio page</title>
+        <style>
+            table, th, td{
+                border: 1px solid black;
+                border-collapse: collapse;
+            }
+        </style>
+
+    </head>
+
+    <body>
+        <header>
+            <nav >
+               <ul style="list-style-type: none;">
+                    <li> <!-- internal linking in the same page -->
+                        <a href="#about">about</a>
+                    </li>
+                    <li>
+                        <a href="#contact">contact</a> 
+                    </li>
+
+                    <li><a href="#project">project</a></li>
+               </ul>
+
+            </nav>
+        </header>
+        <main>
+            <section>
+                <h3 allign="center"> About me</h3>
+                <p>I am kajal gupta. I live in kolkata. I have completed my graduation in bachelors in commerce from calcutta university.
+                    Currently i'm doing my master's in economics and upskilling myself in coding . i am learning full stack development.</p>
+            </section>
+            <section>
+                <h3 allign="center">contact me</h3>
+               <!-- <form action="name any folder here" method="post"></form> -->
+               <form method="post">
+               <div>
+                <label for="username" >Name</label>
+                <input type="text" name="username" placeholder="type your name">
+               </div>
+
+               <div>
+                <label for="number" >phone no.</label>
+                <input type="tel" name="number" value="xxx-xxx-xxxx" pattern="\d{5}([- ]*)\d{6}" >
+               </div>
+
+               <div>
+                <label for="message" > message</label>
+                <textarea name="text" cols="15" rows="5" ></textarea>
+               </div>
+
+               <div>
+                <label for="date&time" > schedule appointmwnt</label>
+                <input type="datetime-local" name="date&time" >
+               </div>
+
+               <div>
+                <label for="contact" > contactvia call or whatsapp</label>
+                <label for="call">call</label>
+                <input type="checkbox" name="call" value="call">
+
+                <label for="wtsp">whatsapp</label>
+                <input type="checkbox" name="wtsp">
+               </div>
+
+               <div>
+                <label for="time-slot" >Time-slot</label>
+                <label for="morning">8am-12pm</label>
+                <input type="radio" name="time-slot" >
+
+                <label for="noon">2pm-5pm</label>
+                <input type="radio" name="time-slot">
+
+                
+                <label for="evening">6pm-9pm</label>
+                <input type="radio" name="time-slot">
+               </div>
+
+                <input type="button" value="submit">
+                <input type="button" value="reset">
+
+               </form>
+
+                
+            </section>
+
+            <!-- table for projects -->
+            <section>
+                <h3>Project</h3>
+                <table>
+                    <tr>
+                        <th>id</th>
+                        <th>name</th>
+                        <th>description</th>
+                        <th>link</th>
+
+                    </tr>
+                    <tr>
+                        <td>001</td>
+                        <td>wild life</td>
+                        <td>a html file for brief description of  extinct wild life animals</td>
+                        <td><a href= "./wild life.html">wild life</a></td>
+                    </tr>
+
+                    <tr>
+                        <td>002</td>
+                        <td>forms</td>
+                        <td>a format of forms by using html</td>
+                        <td><a href= "../forms.html">forms</a></td>
+                    </tr>
+
+                    <tr>
+                        <td>003</td>
+                        <td>list</td>
+                        <td>a project on types of list and element such as block and inline under html</td>
+                        <td><a href= "../list and elements.html">List</a></td>
+                    </tr>
+                    
+                </table>
+            </section>
+
+        </main> 
+        <footer>
+            <h3 allign="center" >You can also contact with me on :</h3>
+            <a href="kajalg1401@gmail.com" name="Gmail          "></a>
+            <a href="#" name="   gitHub add on       "></a>
+            <a href="#" name="           linkedin add on"></a>
+
+
+        </footer>
+
+</body>
+</html>
